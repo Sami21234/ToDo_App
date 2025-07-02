@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todoApp">
+            <h2>To-Do List <img src="assets/notes.png" alt="todoApp Logo"></h2>
+
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Enter your task:">
+                <input type="datetime-local" id="datetime">
+                <select id="priority">
+                    <option value="low">🟢 Low</option>
+                    <option value="medium">🟡 Medium</option>
+                    <option value="High">🔴 High</option>
+                </select>
+                <button onclick="addTask()">Add</button> 
+            </div>
+            <button class="filterPriority" onclick="filterHighPriority()">Focus Mode 🔍</button>
+            <button onclick="getTask()">Show All</button>
+            <ul id="List-container">
+                <!-- <li class="checked">Task 0</li>
+                <li>Task 1</li> -->
+            </ul>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
